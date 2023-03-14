@@ -1,0 +1,192 @@
+body{
+    background-color: black;
+}
+.viola{
+    color:#033a92;
+}
+.bviola{
+    background-color: #033a92;
+}
+.bg-red{
+    background-color: red;
+}
+.cnav{
+    background-color:#3a5e76;
+}
+.sfondohome{
+    background-image: url(/public/media/2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    width: 100%;
+}
+.font1{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.font2{
+    font-family: 'Nasa';
+    src: url('/public/fonts/nasalization-rg.otf');
+}
+.sfondocontattaci{
+    background-image: linear-gradient(rgba(33, 37, 41, 0.3), rgba(33, 37, 41, 0.3)),url(/public/media/3.jpg)  ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.card-img-top {
+    width: 300px;
+    height: 300px;
+    
+}
+.card-img-top2 {
+    width: 650px;
+    /* height: 800px; */
+    margin-top: 60px;
+}
+.card-footer .btn {
+    width: 250px;
+    height: 55px;
+    margin: 3px;
+    margin-left: 0px;
+}
+.card {
+    background-color: transparent;
+}
+
+#titolone{
+    font-size: 180px;
+    text-align: center;
+    margin-left: 23.5vw;
+    
+}
+#titolone2{
+    font-size: 26;
+    text-align: center;
+    left: 22vw;
+    right: 22vw;
+    top: 28vh;
+    color: white;
+    
+}
+.text-mix {
+    background:  linear-gradient(180deg, rgba(255,255,255,0.6474964985994398) 19%, rgba(3,58,146,1) 75%);
+    background-clip: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bottonehome{
+    left: 45vw;
+    top: 75vh;
+    position: absolute;
+}
+.main {
+    align-items: center;
+    justify-content: center;
+    transform: translate(0%,25%);
+}
+
+    button {
+        width: 13em;
+        height: 3.5em;
+        border: none;
+        display: flex;
+        align-items: center;
+        background-color: #171717;
+        border-radius: 15px;
+        padding-left: 1.15em;
+        z-index: 3;
+        overflow: hidden;
+        transition: .4s ease-in-out;
+    }
+    
+    .text {
+        color: white;
+        padding-left: 0.5em;
+        padding-top: 0.1em;
+        letter-spacing: 0.8em;
+        transition: .4s ease-in-out;
+        z-index: 3;
+        font-weight: bold;
+    }
+    
+    .planet {
+        position: relative;
+        margin-left: -9.55em;
+        left: 2.6em;
+        scale: 4;
+        transition: .4s ease-in-out;
+    }
+    
+    .img {
+        margin-left: -7.25em;
+        margin-top: 6.3em;
+        transition: .4s ease-in-out;
+        z-index: -2;
+    }
+    
+    .img .stars {
+        margin-right: -0.8em;
+        margin-top: 7em;
+        scale: 0.85;
+        opacity: 0;
+        transition: .4s ease-in-out;
+    }
+    
+    .img .astronaut {
+        position: relative;
+        top: -6.2em;
+        left: .65em;
+    }
+    
+    .satalite {
+        position: relative;
+        left: -1em;
+        top: -3em;
+        animation: 4s around infinite;
+        transition: .4s ease-in-out;
+    }
+    
+    @keyframes around {
+        0% {
+        z-index: 5;
+        transform: translateY(-3.5em) translateX(8.5em);
+        }
+    
+        50% {
+        transform: translateX(1em) translateY(3.5em);
+        }
+    
+        100% {
+        transform: translateY(-3.5em) translateX(8.5em);
+        z-index: -2;
+        }
+    }
+    
+    button:hover .img {
+        margin-top: -1em;
+        z-index: 4;
+    }
+    
+    button:hover .text {
+        opacity: 0;
+    }
+    
+    button:hover .planet {
+        opacity: 0;
+    }
+    
+    button:hover + .satalite {
+        opacity: 0;
+    }
+    
+    button:active {
+        transform: scale(0.9);
+    }
+    
+    button:active .stars {
+        opacity: 1;
+    }
+
+/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #000000; background-image: url("http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1237px-NASA_logo.svg.png"); background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
