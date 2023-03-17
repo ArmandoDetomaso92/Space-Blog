@@ -14,6 +14,12 @@
         {{session('tradeUpdated')}}
     </div>
     @endif
+    @if (session('tradeDeleted'))
+    <div class="alert alert-danger alert-dismissible fade show border-start border-end" role="alert">
+        {{ session('tradeDeleted') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    @endif
 
     <div class="container my-5 ">
         <div class="row justify-content-center">
@@ -48,3 +54,4 @@
 
 
 </x-layout>
+

@@ -3,6 +3,16 @@
         <h3 class="fontuno fontor display-1 ms-5 text-white text-center pt-5 ">Contattaci</h3>
         <div class="row justify-content-center nero ">
             <div class="col-8 mt-5 ">
+
+                @if (session('status'))
+                <div class="alert alert-success alert-dismissible fade show border-start border-end" role="alert">
+                    {{ session('status') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+
+
+
                     <form class="p-5 shadow" method="POST" action="{{route('contact_us_submit')}}">
                 @csrf
                     <div class="mb-3">

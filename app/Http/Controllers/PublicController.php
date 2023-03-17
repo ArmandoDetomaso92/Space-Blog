@@ -23,6 +23,6 @@ class PublicController extends Controller
         $user_data = compact('name','email','message');
                     
         Mail::to($email)->send(new ContactMail($user_data));
-        return redirect(route('homepage'))->with('status','Email inviata con successo!');
+        return redirect(route('contact_us'))->with('status','Email inviata con successo!');
         }
 }

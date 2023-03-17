@@ -10,11 +10,15 @@
     <h1>Ciao, {{$user_data['name']}} grazie per averci contattato!</h1>
 
 
-    <p>Questi sono i dati che hai inserito:</p>
+    <p class="fw-bold">Questi sono i dati che hai inserito:</p>
     <ul>
         <li>Nome:{{$user_data['name']}}</li>
         <li>Email:{{$user_data['email']}}</li>
-        <li>Messaggio:{{$user_data['message']}}</li>
+        <li>Messaggio:</li>
     </ul>
+        <h5 class="ms-5">{{$user_data['message']}}</h5>
+    </h4>
+
+    <p>Il nostro team provvederà a rispondeti il prima possibile.</p>
 </body>
 </html>
